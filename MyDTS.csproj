@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{446DA960-6C62-4EC4-85D1-668034F06CC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyDTS</RootNamespace>
+    <AssemblyName>MyDTS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CControl.Designer.cs">
+      <DependentUpon>CControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbconn\create_conn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbconn\create_conn.Designer.cs">
+      <DependentUpon>create_conn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbconn\dbconn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbconn\dbconn.Designer.cs">
+      <DependentUpon>dbconn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbconn\DBHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbconn\DBHouse.Designer.cs">
+      <DependentUpon>DBHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regist.Designer.cs">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sync\Float.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sync\Float.Designer.cs">
+      <DependentUpon>Float.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sync\SqlReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sync\SqlReport.Designer.cs">
+      <DependentUpon>SqlReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sync\SQLResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sync\SQLResult.Designer.cs">
+      <DependentUpon>SQLResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sync\SyncOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sync\SyncOptions.Designer.cs">
+      <DependentUpon>SyncOptions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CControl.resx">
+      <DependentUpon>CControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbconn\create_conn.resx">
+      <DependentUpon>create_conn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbconn\dbconn.resx">
+      <DependentUpon>dbconn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbconn\DBHouse.resx">
+      <DependentUpon>DBHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Regist.resx">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sync\Float.resx">
+      <DependentUpon>Float.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sync\SqlReport.resx">
+      <DependentUpon>SqlReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sync\SQLResult.resx">
+      <DependentUpon>SQLResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sync\SyncOptions.resx">
+      <DependentUpon>SyncOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassDDTS\ClassDDTS\ClassDDTS.csproj">
+      <Project>{95302cad-80e3-4c0b-97ce-abbf2dab0990}</Project>
+      <Name>ClassDDTS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

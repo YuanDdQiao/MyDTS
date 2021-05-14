@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDTS", "MyDTS.csproj", "{446DA960-6C62-4EC4-85D1-668034F06CC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDDTS", "..\ClassDDTS\ClassDDTS\ClassDDTS.csproj", "{95302CAD-80E3-4C0B-97CE-ABBF2DAB0990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDTSServer", "..\DDTSServer\DDTSServer.csproj", "{FBE92600-7D22-49AA-99FB-B4C5D12FA27F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{446DA960-6C62-4EC4-85D1-668034F06CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446DA960-6C62-4EC4-85D1-668034F06CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446DA960-6C62-4EC4-85D1-668034F06CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446DA960-6C62-4EC4-85D1-668034F06CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95302CAD-80E3-4C0B-97CE-ABBF2DAB0990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95302CAD-80E3-4C0B-97CE-ABBF2DAB0990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95302CAD-80E3-4C0B-97CE-ABBF2DAB0990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95302CAD-80E3-4C0B-97CE-ABBF2DAB0990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE92600-7D22-49AA-99FB-B4C5D12FA27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE92600-7D22-49AA-99FB-B4C5D12FA27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE92600-7D22-49AA-99FB-B4C5D12FA27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE92600-7D22-49AA-99FB-B4C5D12FA27F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {087A2D9D-9F58-48AE-923E-8FDCC8AD8BF5}
+	EndGlobalSection
+EndGlobal
